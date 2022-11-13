@@ -1,0 +1,190 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;    
+}
+body
+{
+    display: grid;
+    place-content: center;
+    background-image: url(images/bg-mobile.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p
+{
+    color: hsl(229, 7%, 55%);
+    padding: 10px;
+}
+h1{
+    color: black;
+}
+h4 ,.num
+{
+    color:hsl(243, 100%, 93%) ;
+}
+.logo
+{
+    width: 60%;
+    padding: 20px 0;
+}
+.doc,.file,.upload
+{
+    padding: 15px 17px;
+    background-color:hsl(229, 57%, 11%) ; 
+    border-radius: 15px;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 375px;
+    
+}
+.part1
+{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    padding: 30px;
+    border-radius: 10px 40% 10px 10px;
+}
+.content
+{   
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    
+}
+.part2
+{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    align-items: center;
+}
+#five
+{
+    position: relative;
+    top: 1.5px;
+}
+.bignum
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1px;
+    background-color: ghostwhite;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+}
+.eight
+{
+    position: relative;
+    bottom: 3px;
+}
+.five
+{
+    position: relative;
+    top: 2px;
+    padding-right: 5px;
+}
+.scale
+{
+    display: flex;
+    justify-content: space-between;
+    color: white; 
+}
+.slidecontainer
+{
+    background-color:hsl(229, 57%, 11%);
+    border-radius: 10px;
+  width: 100%;
+  height: 20px;
+  margin: 10px;
+}
+.slidecomplete
+{
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    width: 75%;
+    height: 15px;
+    margin: 3px;
+}
+.button
+{
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: relative;
+    left: 93%;
+    top:10% ;
+}
+@media (width>800px) {
+    body
+    {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url(images/bg-desktop.png);
+        background-position:bottom;
+        background-size: contain;  
+        max-width: 1400px;
+    }
+    .container
+    {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1400px;
+    }
+    .part1
+    {
+       width: 400px;
+       border-radius: 10px 130px 10px 10px; 
+    }
+    .part2
+    {
+        width: 500px;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+    .logo
+    {
+        width: 50%;
+    }
+    .scale
+    {
+        justify-content: space-between;
+        width: 430px;
+    }
+    .bignum
+    {
+        position: relative;
+        left: 150px;
+        top: -170px;
+    }
+    .bignum::after{
+        content: "";
+        position: absolute;
+        width:0;
+        height:0;
+        left: 8.15rem;
+        top: 90%;
+        border-top: solid 30px ghostwhite;
+        border-left: solid 30px transparent;
+        border-right: solid 0px transparent;
+        border-bottom: solid 0px transparent;
+    }
+    
+      
+}
